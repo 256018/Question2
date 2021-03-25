@@ -2,6 +2,13 @@
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
+
+/**
+ * @brief This function store the csv values in an array of struct of type info_t as defined in header_csv.h
+ * 
+ * @param filename 
+ * @return error_t 
+ */
 error_t storecsvinstruct(char *filename)
 {
     FILE *fileptr=fopen(filename,"r");

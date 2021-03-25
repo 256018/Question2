@@ -1,5 +1,12 @@
 #include "header_csv.h"
 #include<stdio.h>
+
+/**
+ * @brief This function read a csv file and print its content.
+ * 
+ * @param filename
+ * @return error_t 
+ */
 error_t readcsvfile(char *filename)
 {
     FILE *fileptr=fopen(filename,"r");

@@ -2,10 +2,25 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
+
+/**
+ * @brief Defining a comparator function for comparing two strings and returning alphabetically smaller string
+ * 
+ * @param p 
+ * @param q 
+ * @return int 
+ */
 int comparator(const void* p, const void* q)
 {
     return strcmp(((info_t*)p)->name,((info_t*)q)->name);
 }
+
+/**
+ * @brief This function hepls us to sort our data stored in array of struct in alphabetical order of name.
+ * 
+ * @param arr 
+ * @return error_t 
+ */
 error_t sortcsvfile(info_t *arr)
 {
     if(arr==NULL)
